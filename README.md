@@ -30,19 +30,20 @@ This project implements an **automated system for detecting pneumonia in Chest X
 
 ### Key Achievements
 
-| Metric | Result | Status |
-|--------|--------|--------|
-| **Recall** | 97.2% | ✅ Catches 97% of cases |
-| **Precision** | 96.5% | ✅ Few false alarms |
-| **mAP50** | 97.95% | ✅ Excellent accuracy |
-| **Inference Speed** | 2.26ms | ✅ Real-time capable |
-| **Test Coverage** | 96% | ✅ Thoroughly tested |
+| Metric              | Result | Status                  |
+| ------------------- | ------ | ----------------------- |
+| **Recall**          | 97.2%  | ✅ Catches 97% of cases |
+| **Precision**       | 96.5%  | ✅ Few false alarms     |
+| **mAP50**           | 97.95% | ✅ Excellent accuracy   |
+| **Inference Speed** | 2.26ms | ✅ Real-time capable    |
+| **Test Coverage**   | 96%    | ✅ Thoroughly tested    |
 
 ---
 
 ## ✨ Features
 
 ### Core Features
+
 - 🔍 **Real-Time Detection** - Process X-ray images in milliseconds
 - 📊 **High Accuracy** - State-of-the-art performance metrics
 - 🖼️ **Image Enhancement** - CLAHE preprocessing for medical imaging
@@ -51,6 +52,7 @@ This project implements an **automated system for detecting pneumonia in Chest X
 - 💾 **Export Results** - Download annotated images & reports (PNG, JSON, CSV)
 
 ### Advanced Features
+
 - 🧪 **Test-Time Augmentation (TTA)** - Robust predictions with multiple image variants
 - 📉 **Attention Heatmaps** - Visualize detection regions
 - 📊 **Confidence Charts** - See detection certainty scores
@@ -65,7 +67,7 @@ This project implements an **automated system for detecting pneumonia in Chest X
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/dinhtuandev/medical-lesion-detection.git
 cd medical-lesion-detection
 
 # Install dependencies
@@ -102,7 +104,7 @@ python -m streamlit run app.py
 
 ```bash
 # 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/dinhtuandev/medical-lesion-detection.git
 cd medical-lesion-detection
 
 # 2. Create virtual environment (recommended)
@@ -141,6 +143,7 @@ python -m streamlit run app.py
 Then open http://localhost:8501 in your browser.
 
 **Features:**
+
 - Single image analysis
 - Batch processing
 - Side-by-side comparison
@@ -246,14 +249,14 @@ medical-lesion-detection/
 
 ### Performance Metrics
 
-| Metric | Value | Interpretation |
-|--------|-------|-----------------|
-| **Precision** | 96.5% | When model predicts PNEUMONIA, 96.5% are correct |
-| **Recall** | 97.2% | Catches 97.2% of actual pneumonia cases |
-| **F1-Score** | 96.85% | Excellent balance between precision & recall |
-| **mAP50** | 97.95% | High accuracy in bounding box localization |
-| **Inference Speed** | 2.26 ms | Can process ~440 images per second |
-| **Model Size** | 51 MB | Portable and easy to deploy |
+| Metric              | Value   | Interpretation                                   |
+| ------------------- | ------- | ------------------------------------------------ |
+| **Precision**       | 96.5%   | When model predicts PNEUMONIA, 96.5% are correct |
+| **Recall**          | 97.2%   | Catches 97.2% of actual pneumonia cases          |
+| **F1-Score**        | 96.85%  | Excellent balance between precision & recall     |
+| **mAP50**           | 97.95%  | High accuracy in bounding box localization       |
+| **Inference Speed** | 2.26 ms | Can process ~440 images per second               |
+| **Model Size**      | 51 MB   | Portable and easy to deploy                      |
 
 ### Model Capabilities
 
@@ -278,11 +281,11 @@ Code Coverage:       92%
 
 ### Test Breakdown
 
-| Category | Tests | Pass | Coverage |
-|----------|-------|------|----------|
-| **Preprocessing** | 11 | 11 | ✅ 100% |
-| **Prediction** | 13 | 12 | ✅ 92% |
-| **Integration** | 9 | 9 | ✅ 100% |
+| Category          | Tests | Pass | Coverage |
+| ----------------- | ----- | ---- | -------- |
+| **Preprocessing** | 11    | 11   | ✅ 100%  |
+| **Prediction**    | 13    | 12   | ✅ 92%   |
+| **Integration**   | 9     | 9    | ✅ 100%  |
 
 ### Running Tests
 
@@ -385,14 +388,14 @@ deploy:
 
 ### Key Technologies
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Detection** | YOLOv8 | Real-time object detection |
-| **Enhancement** | CLAHE | Improve X-ray contrast |
-| **Processing** | OpenCV | Image manipulation |
-| **Framework** | PyTorch | Deep learning backend |
-| **Interface** | Streamlit | Web application |
-| **Deployment** | Docker | Containerization |
+| Component       | Technology | Purpose                    |
+| --------------- | ---------- | -------------------------- |
+| **Detection**   | YOLOv8     | Real-time object detection |
+| **Enhancement** | CLAHE      | Improve X-ray contrast     |
+| **Processing**  | OpenCV     | Image manipulation         |
+| **Framework**   | PyTorch    | Deep learning backend      |
+| **Interface**   | Streamlit  | Web application            |
+| **Deployment**  | Docker     | Containerization           |
 
 ### Why CLAHE for Medical Images?
 
@@ -401,7 +404,7 @@ CLAHE (Contrast Limited Adaptive Histogram Equalization) is ideal for X-rays bec
 ✅ **Preserves Details** - Maintains natural appearance  
 ✅ **Enhances Lesions** - Makes pneumonia regions more visible  
 ✅ **Prevents Noise** - Avoids over-amplification of artifacts  
-✅ **Adaptive** - Processes image locally, not globally  
+✅ **Adaptive** - Processes image locally, not globally
 
 ---
 
@@ -430,7 +433,7 @@ Contributions are welcome! Please follow these steps:
 
 - Write unit tests for new features
 - Follow PEP 8 style guide
-- Update documentation  
+- Update documentation
 - Test on different image types
 
 ---
@@ -465,13 +468,13 @@ A: Use a larger dataset, adjust CLAHE parameters, or try ensemble methods.
 
 ## 🆘 Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Port 8501 already in use | Change port: `streamlit run app.py --server.port 8502` |
-| Model file not found | Check path in config or download from [models/](models/) |
-| Out of memory | Reduce batch size or image dimensions |
-| Slow inference | Enable GPU or use smaller image size |
-| File upload not working | Check file format (JPG/PNG) and size < 100MB |
+| Issue                    | Solution                                                 |
+| ------------------------ | -------------------------------------------------------- |
+| Port 8501 already in use | Change port: `streamlit run app.py --server.port 8502`   |
+| Model file not found     | Check path in config or download from [models/](models/) |
+| Out of memory            | Reduce batch size or image dimensions                    |
+| Slow inference           | Enable GPU or use smaller image size                     |
+| File upload not working  | Check file format (JPG/PNG) and size < 100MB             |
 
 ---
 
@@ -486,12 +489,12 @@ A: Use a larger dataset, adjust CLAHE parameters, or try ensemble methods.
 
 ## 📈 Project Status
 
-| Component | Status | Details |
-|-----------|--------|---------|
-| **Model** | ✅ Production Ready | 97.95% mAP, tested thoroughly |
-| **Tests** | ✅ 24/25 Passing | 96% success rate, 92% coverage |
-| **Documentation** | ✅ Complete | Comprehensive guides provided |
-| **Deployment** | ✅ Docker Ready | Containerized and cloud-ready |
+| Component         | Status              | Details                        |
+| ----------------- | ------------------- | ------------------------------ |
+| **Model**         | ✅ Production Ready | 97.95% mAP, tested thoroughly  |
+| **Tests**         | ✅ 24/25 Passing    | 96% success rate, 92% coverage |
+| **Documentation** | ✅ Complete         | Comprehensive guides provided  |
+| **Deployment**    | ✅ Docker Ready     | Containerized and cloud-ready  |
 
 ---
 
@@ -502,9 +505,9 @@ If you use this project in research, please cite:
 ```bibtex
 @software{medical_lesion_detection_2026,
   title={Medical Lesion Detection: Automated Pneumonia Detection in Chest X-Rays},
-  author={Your Name},
+  author={Tran Dinh Tuan},
   year={2026},
-  url={https://github.com/your-repo},
+  url={https://github.com/dinhtuandev/medical-lesion-detection},
   note={YOLOv8-based object detection system for medical imaging}
 }
 ```
@@ -514,6 +517,7 @@ If you use this project in research, please cite:
 ## 📝 Changelog
 
 ### v1.0.0 (February 2026)
+
 - ✅ Initial release
 - ✅ YOLOv8 model with 97.95% mAP50
 - ✅ Streamlit web interface
@@ -531,4 +535,4 @@ If you use this project in research, please cite:
 
 ---
 
-*This project is designed for educational and research purposes. Always consult qualified healthcare professionals for medical diagnosis.*
+_This project is designed for educational and research purposes. Always consult qualified healthcare professionals for medical diagnosis._
