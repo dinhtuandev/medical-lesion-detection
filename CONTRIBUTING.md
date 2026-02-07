@@ -47,7 +47,7 @@ git clone https://github.com/YOUR_USERNAME/medical-lesion-detection.git
 cd medical-lesion-detection
 
 # 3. Add upstream remote
-git remote add upstream https://github.com/ORIGINAL_OWNER/medical-lesion-detection.git
+git remote add upstream https://github.com/dinhtuandev/medical-lesion-detection.git
 ```
 
 ### Setup Development Environment
@@ -180,12 +180,14 @@ Fixes #456
 ### Before Submitting
 
 1. **Update your branch**
+
 ```bash
 git fetch upstream
 git rebase upstream/main
 ```
 
 2. **Run all checks**
+
 ```bash
 pytest tests/ -v
 pytest tests/ --cov=src --cov-report=html
@@ -194,6 +196,7 @@ black src/ app.py
 ```
 
 3. **Push your changes**
+
 ```bash
 git push origin feature/your-feature-name
 ```
@@ -202,26 +205,31 @@ git push origin feature/your-feature-name
 
 ```markdown
 ## Description
+
 Brief description of changes
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Documentation update
 - [ ] Performance improvement
 
 ## Testing
+
 - [ ] Tests added/modified
 - [ ] All tests passing
 - [ ] Coverage maintained/improved
 
 ## Checklist
+
 - [ ] Code follows style guidelines
 - [ ] Documentation updated
 - [ ] No breaking changes
 - [ ] Commits follow conventions
 
 ## Related Issues
+
 Closes #issue_number
 ```
 
@@ -240,6 +248,7 @@ Closes #issue_number
 ### Bug Reports
 
 Include:
+
 ```
 - Python version
 - OS (Windows/Mac/Linux)
@@ -251,6 +260,7 @@ Include:
 ### Feature Requests
 
 Describe:
+
 ```
 - Use case/motivation
 - Proposed solution
@@ -272,6 +282,7 @@ A clear description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. See error
@@ -283,6 +294,7 @@ What should happen
 What actually happens
 
 **Environment**
+
 - OS: [e.g. Windows 10]
 - Python: [e.g. 3.10]
 - Version: [e.g. v1.0.0]
@@ -309,22 +321,22 @@ Any additional context
 ```python
 def apply_clahe(image, clip_limit=2.0, tile_size=8):
     """Apply CLAHE enhancement to image.
-    
+
     Contrast Limited Adaptive Histogram Equalization (CLAHE)
     enhances contrast locally without noise amplification.
-    
+
     Args:
         image (ndarray): Input BGR image
         clip_limit (float): Contrast limit, default 2.0
         tile_size (int): Tile grid size, default 8
-    
+
     Returns:
         ndarray: Enhanced BGR image
-        
+
     Raises:
         TypeError: If image is not ndarray
         ValueError: If clip_limit or tile_size invalid
-        
+
     Example:
         >>> img = cv2.imread('xray.jpg')
         >>> enhanced = apply_clahe(img, clip_limit=2.0)
@@ -378,6 +390,7 @@ def apply_clahe(image, clip_limit=2.0, tile_size=8):
 ## Recognition
 
 Contributors will be recognized in:
+
 - Repository README
 - Release notes
 - Contributor list
