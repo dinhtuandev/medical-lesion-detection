@@ -43,7 +43,7 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 # Click "Fork" button on the repository page
 
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/medical-lesion-detection.git
+git clone https://github.com/dinhtuandev/medical-lesion-detection.git
 cd medical-lesion-detection
 
 # 3. Add upstream remote
